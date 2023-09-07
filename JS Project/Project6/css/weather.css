@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/sky3.jpg);
+    background-size: 300vh;
+}
+
+#container {
+    padding: 30px;
+    margin: 15vh auto;
+    width: 30vw;
+    height: auto;
+    text-align: center;
+    background-color: rgba(242, 248, 249, 0.5);
+    border-radius: 22px;
+    color: rgb(37, 24, 106);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+#searchLabel {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#searchInput {
+    background-color: #46aded7e;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    height: 33px;
+    margin: 5px;
+    border: none;
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.751);
+    padding: 5px;
+    font-size: 1rem;
+}
+
+#searchBtn {
+    height: 33px;
+    margin: 5px;
+    color: rgb(37, 24, 106);
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#searchDiv {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+
+#popup {
+    display: none;
+    width: 23vw;
+    height: 15vh;
+    background-color: #46aded7e;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    line-height: 2;
+    margin: 20px auto;
+}
+
+#resolteDiv {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+#imageDiv {
+    height: 13vh;
+    line-height: 1;
+}
+
+#weatherDiv {
+    margin-top: 0;
+    line-height: 0.5;
+}
+
+#temp {
+    font-size: 4rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#extra {
+    background-color: #46aded7e;
+    border-radius: 5px;
+    width: 30%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 550px) {
+    #container {
+        width: 90vw;
+        height: auto;
+    }
+
+    #weatherDiv {
+        font-size: 1.5rem;
+    }
+
+    #searchDiv {
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2;
+    }
+
+    #searchBtn {
+        width: 25%;
+        margin: auto;
+    }
+
+    #resolteDiv {
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+
+    #extra {
+        font-style: 1rem;
+        width: 60vw;
+    }
+
+    #popup {
+        width: 70vw;
+        height: auto;
+        font-size: 1.3rem;
+        margin: auto;
+        line-height: 1;
+    }
+}

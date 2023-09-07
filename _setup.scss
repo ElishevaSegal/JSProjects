@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+$textSize: 1.2rem;
+$headerSize: 2.2rem;
+$baseWidth: 100%;
+$basefont: 'Open Sans';
+
+@mixin btn {
+    border-radius: 30px;
+    padding: 10px 10px;
+    background-color: rgb(163, 201, 179);
+    color: black;
+    border: none;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        transform: scale(0.9);
+    }
+}

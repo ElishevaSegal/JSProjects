@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./css/memory_game.css" />
+</head>
+
+<body>
+    <div id="mainContainer">
+        <h1>Memory Game</h1>
+        <div id="players"><label for="player1">Enter Player 1 name:</label>
+            <input id="player1" type="text" placeholder="fill player1 name " required><br><br>
+            <label for=" player1">Enter Player 2 name:</label><input id="player2" type="text"
+                placeholder="fill player2 name " required><br><br>
+
+
+        </div>
+
+        <div id="btns">
+            <label for="">
+                <details>
+                    <summary>
+                        Start
+                    </summary>
+                    1.please fill above the players name.<br>
+                    2.choose how many cards do you want to play with✨
+                </details>
+            </label>
+            <button class="btn" id="btn12">12</button>
+            <button class="btn" id="btn18">18</button>
+            <button class="btn" id="btn24">24</button><br>
+            <button class="btn" id="playAgainBtn">Play Again</button>
+        </div>
+        <div id="cardsContainer"></div>
+    </div>
+    <div id="winnerTable">
+        <h3>Scores</h3>
+        <h2 id="p1"></h2>
+        <h2 id="p2"></h2>
+        <div id="player1Scores"></div>
+        <div id="player2Scores"></div>
+    </div>
+    <div id="popup">
+        <h1></h1>
+    </div>
+
+    <script src="./js/memoryGame.js"></script>
+</body>
+
+</html>

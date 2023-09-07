@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section {
+  width: 1100px;
+  height: 425px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+section h1 {
+  font-family: satisfy;
+  font-weight: normal;
+  font-size: 10rem;
+}
+section h2 {
+  font-family: "Varela Round";
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+section p {
+  font-family: "Varela Round";
+  font-size: 1rem;
+}
+
+form {
+  direction: rtl;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Varela Round";
+  text-align: right;
+}
+form label {
+  text-align: right;
+}
+form input {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 350px;
+  height: 50px;
+  border: 1px solid #fff;
+}
+form .btn {
+  background-color: #fff;
+  color: #2823FD;
+  width: 150px;
+  font-weight: 200;
+}
+
+@media (max-width: 550px) {
+  section {
+    margin-top: 80px;
+    width: 250px;
+    height: auto;
+  }
+  section h1 {
+    font-size: 2.5rem;
+  }
+  section h2 {
+    font-size: 1rem;
+  }
+  form {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  form input {
+    width: 250px;
+    height: 32px;
+  }
+  form label {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  form .btn {
+    width: 250px;
+  }
+}/*# sourceMappingURL=main.css.map */

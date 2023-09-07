@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/screenBuilder.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3">
+                <form id="form1">
+                    <h1>Screen Builder</h1>
+                    <div class="mb-3">
+                        <label for="inputTag" class="form-label">Type of Element</label>
+                        <input type="text" class="form-control" id="inputTag" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputWidth" class="form-label">Width</label>
+                        <input type="text" class="form-control" id="inputWidth" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputHeight" class="form-label">Height</label>
+                        <input type="text" class="form-control" id="inputHeight" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputContent" class="form-label">Content</label>
+                        <input type="text" class="form-control" id="inputContent" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputColor" class="form-label">Text Color</label>
+                        <input type="text" class="form-control" id="inputColor" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputSize" class="form-label">Font Size</label>
+                        <input type="text" class="form-control" id="inputSize" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputBackgrondColor" class="form-label">Background Color</label>
+                        <input type="text" class="form-control" id="inputBackgrondColor" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputBorder" class="form-label">Border: width type color</label>
+                        <input type="text" class="form-control" id="inputBorder" />
+                    </div>
+                    <button class="btn btn-primary" id="submitBtn">Submit</button>
+                    <button class="btn btn-primary" id="saveBtn">Save</button>
+                    <button class="btn btn-danger" id="clearBtn">clear</button>
+                </form>
+
+            </div>
+            <div class="col-8" id="pageDiv"><br><br></div>
+        </div>
+    </div>
+    <script src="./js/screenBuilder.js"></script>
+</body>
+
+</html>

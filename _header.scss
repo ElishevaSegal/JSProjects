@@ -1,0 +1,91 @@
+.hamb {
+    display: none;
+}
+
+
+header {
+    position: fixed;
+    width: $baseWidth;
+    height: 82px;
+    background-color: rgb(163, 201, 179);
+    z-index: 10;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+
+        li a {
+            display: block;
+            text-decoration: none;
+            font-family: $basefont;
+            width: 120px;
+            text-align: center;
+            padding: 0px 25px;
+            line-height: 4.5;
+            font-size: $textSize;
+            color: black;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+header div.profile {
+    position: fixed;
+    top: 0;
+    left: 30px;
+    display: flex;
+}
+
+.myimage {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 85px;
+}
+
+.myname {
+    font-size: 1.2rem;
+    line-height: 3.8;
+    padding: 5px;
+    font-family: 'Great Vibes';
+}
+
+@media(max-width:550px) {
+    nav>ul {
+        display: none;
+    }
+
+    header div.profile {
+        top: 15px;
+        left: 15px;
+    }
+
+    header .myimage {
+        height: 50px;
+    }
+
+    P.myname {
+        display: none;
+    }
+
+    .hamb {
+        font-size: 1.5rem;
+        line-height: 3;
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 8px;
+    }
+
+    .active {
+        display: block;
+        flex-direction: column;
+        margin-top: 82px;
+        background-color: rgb(163, 201, 179);
+        width: 100vw;
+    }
+}

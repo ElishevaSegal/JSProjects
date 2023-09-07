@@ -1,0 +1,276 @@
+body {
+    width: 100%;
+}
+
+.section1 {
+    width: $baseWidth;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    background-image: url(./style/codioful-formerly-gradienta-XldWp_gsaUw-unsplash.jpg);
+    background-size: cover;
+
+    div {
+        width: 50%;
+        direction: rtl;
+        text-align: center;
+        font-family: $basefont;
+        margin-top: 50px;
+
+        h1 {
+
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.section2 {
+    width: $baseWidth;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+
+    a {
+        overflow: hidden;
+
+        img {
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+.section3 {
+    padding-top: 82px;
+    width: $baseWidth;
+    font-family: $basefont;
+    text-align: center;
+    height: auto;
+    background-image: url(style/codioful-formerly-gradienta-XldWp_gsaUw-unsplash.jpg);
+
+    div {
+        height: 400px;
+        width: 50%;
+        margin: 0 auto;
+
+        image {
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        a button {
+            @include btn;
+            margin-bottom: 10px;
+        }
+
+    }
+}
+
+.section4 {
+    padding-top: 70px;
+    padding-bottom: 95px;
+    background-image: url(style/codioful-formerly-gradienta-XldWp_gsaUw-unsplash.jpg);
+    background-size: cover;
+}
+
+div>div.card {
+    text-align: center;
+    box-shadow: rgba(129, 128, 128, 0.4) 0px 0px 18px 0px;
+    margin-top: 20px;
+    overflow: hidden;
+
+
+    .card-img-top {
+        height: 180px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .card-img-top:hover {
+        transform: scale(1.2);
+    }
+
+    .btn {
+        @include btn;
+    }
+}
+
+.section4-2 {
+    direction: ltr;
+    padding-top: 70px;
+    padding-bottom: 95px;
+    background-image: url(style/codioful-formerly-gradienta-XldWp_gsaUw-unsplash.jpg);
+    background-size: cover;
+
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    div>div.card {
+        text-align: center;
+        box-shadow: rgba(129, 128, 128, 0.4) 0px 0px 18px 0px;
+        margin-top: 20px;
+        overflow: hidden;
+        width: 50vw;
+
+        div.img {
+            overflow: hidden;
+            transition: all 0.8s ease-in-out;
+        }
+
+        div.img img {
+            height: 100%;
+
+        }
+
+        div.img:hover {
+            transform: scale(1.1);
+        }
+
+        .card-title {
+            font-size: 2.7rem;
+            padding: 20px;
+        }
+
+        .btn {
+            @include btn;
+        }
+    }
+}
+
+.section5 {
+    width: $baseWidth;
+    background-image: URL(style/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 70px;
+    margin-top: 100px;
+
+    h3,
+    p {
+        text-align: right;
+        padding-right: 50px;
+    }
+
+    form {
+        text-align: right;
+        padding-right: 50px;
+    }
+
+    input,
+    textarea {
+        background-color: rgba($color: #ffffff, $alpha: 0.2);
+        width: 350px;
+    }
+
+    lable {
+        font-family: $basefont;
+    }
+
+    button {
+        @include btn;
+        width: 120px;
+    }
+
+    div.contactme {
+        background-color: rgb(107, 76, 76);
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+        width: $baseWidth;
+
+        div {
+            color: wheat;
+        }
+
+        .contactIcon>p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contactIcon,
+        .contactIcon>p {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width:550px) {
+
+    .section1 {
+        padding: 5px;
+        width: $baseWidth;
+
+        div {
+            width: 80vw;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .section1 {
+        width: $baseWidth;
+        height: auto;
+    }
+
+    .section2 {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .section3 div {
+        height: auto;
+    }
+
+    .section4-2 {
+        h1 {
+            font-size: 3rem;
+        }
+
+        div>div.card {
+            width: 95vw;
+
+            .card-title {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    .section5 {
+        width: 100%;
+
+        input,
+        textarea {
+            width: auto;
+        }
+    }
+
+    .contactme {
+        width: $baseWidth;
+        flex-direction: column;
+
+        .contactIcon {
+            padding: 10px;
+        }
+    }
+}

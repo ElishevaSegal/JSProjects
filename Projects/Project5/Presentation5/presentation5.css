@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 82px;
+    background-color: rgb(163, 201, 179);
+}
+
+
+header div.profile {
+    position: fixed;
+    top: 0;
+    left: 30px;
+    display: flex;
+}
+
+.myimage {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 85px;
+}
+
+.myname {
+    font-size: 1.2rem;
+    line-height: 3.8;
+    padding: 5px;
+    font-family: "Great Vibes";
+}
+
+.section1 {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    width: 100vw;
+    font-family: 'Open Sans';
+    text-align: center;
+    height: auto;
+    background-image: url(../../../style/codioful-formerly-gradienta-XldWp_gsaUw-unsplash.jpg);
+}
+
+.section1 h1 {
+    font-size: 5rem;
+}
+
+.section1 div {
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section1 h1,
+.section1 p {
+    text-align: center;
+}
+
+.section1 button {
+    border-radius: 30px;
+    padding: 10px 10px;
+    background-color: rgb(163, 201, 179);
+    color: black;
+    border: none;
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.section1 button:hover {
+    transform: scale(0.9);
+}
+
+
+
+.section2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.section4 div.contactme {
+    height: auto;
+    background-color: rgb(107, 76, 76);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    width: 100vw;
+}
+
+.section3 {
+    width: 100vw;
+    height: 700px;
+    background-image: url(../../../style/codioful-formerly-gradienta-XldWp_gsaUw-unsplash.jpg);
+    display: grid;
+    place-items: center;
+}
+
+.section3 img {
+    box-shadow: 0px 0px 40px #00000066;
+    height: 550px;
+    ;
+    width: 909px;
+    ;
+}
+
+.section4 div,
+div img {
+    text-align: center;
+    color: wheat;
+}
+
+footer {
+    background-color: rgb(107, 76, 76);
+    text-align: center;
+    width: 100vw;
+    font-family: 'Great Vibes';
+    word-spacing: 3px;
+    color: wheat;
+    padding-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    direction: ltr;
+}
+
+
+@media (max-width: 550px) {
+    body {
+        width: 100%;
+
+    }
+
+    header div.profile {
+        top: 15px;
+        left: 15px;
+    }
+
+    header .myimage {
+        height: 50px;
+    }
+
+    .myname {
+        display: none;
+    }
+
+    .section1 {
+        width: 100%;
+    }
+
+    .section1 div {
+        width: 270px;
+    }
+
+    .section1 h1 {
+        font-size: 2rem;
+    }
+
+    .section1 p {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    .section2 {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .section3 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .section3 img {
+        width: 250px;
+        height: 160px;
+    }
+
+
+    .contactme {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-bottom: 0;
+    }
+}
